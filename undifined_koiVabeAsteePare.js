@@ -7,6 +7,9 @@
 3. (reason 3) //ekane just 2ta argumeeent pass kora hocce & peramitar er jonno kuno dfault  valu set kora hoini. protam 2tar man tiktak dekalew, baki 2tar man(c & d) er man undefined dekabe,
 4. (reason 4)
 5.  (reason 5)
+6. (reason 6)
+7. (reason 7)
+8. (reason 8) kuno ekta data set kora hoini seta define kora hoi (null) diye (undefined) use kora manaina tai (null) use korte hbe.
 */
 
 
@@ -55,12 +58,17 @@ console.log(fifth.salary , fifth.name);//output: undefined tipu
 // (reason 6)
 const six = [1,2,3];
 
-console.log(six[0], six[3])// output: 1 undefined 
-// jkn kuno array er index ase (dhori) 3ta obdi kintu ami output dekte cacci array er index num 4 er, jeta array nai shuddo ,tkn sei jaigai undefined dibe.
+console.log(six[0], six[5])// output: 1 undefined 
+// jkn kuno array er index ase (dhori) 5ta obdi kintu ami output dekte cacci array er index num 4 er, jeta array nai shuddo ,tkn sei jaigai undefined dibe.
 
 // (reason 7)
-const seven = [1,2,3];
- delete seven[2];// evabei delete kora uchit na, karon array er majkanee evabe delete kore dile gorto er moto hoye jai, tai (splice) er maddomee delete koratai recomended, & evabe delete korle undefined dei.
+const seven = [1,2,3,4,5];
+ delete seven[2];// evabei delete kora uchit na, karon array er majkanee evabe delete kore dile gorto er moto hoye jai, tai (splice) er maddomee delete koratai recomended, & evabe delete korle undefined dei. & array ta dekte niser  moto hoye jai.
+ console.log(seven);// output: [ 1, 2, <1 empty item>, 4, 5 ]
 
 
 // (reason 8)
+const eight = undefined;//evabe variable er man undefined set kora jai. kintu (undefined ) set na kore (null) set koratai manan soi.karon: suppose ( kuno ekta jinish surver e udpate kora hoini ar user cacce sei jinish ta ,tkn seta (null) name set kore rakle bujai jinish ta nai ekono)
+ const nine = null;
+
+// (reason 9)
